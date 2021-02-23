@@ -1,6 +1,6 @@
 with n as (
 	SELECT null x
-	UNION ALL null
+	UNION ALL SELECT null
 )
 
 SELECT row_number() OVER ( ORDER BY (SELECT NULL) ) n
