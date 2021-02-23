@@ -1,0 +1,85 @@
+2021-02-23 21:30:07.567986 (MainThread): Running with dbt=0.19.0
+2021-02-23 21:30:07.728819 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, defer=None, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='C:\\Users\\simeon\\.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, use_cache=True, use_colors=None, vars='{}', warn_error=False, which='deps', write_json=True)
+2021-02-23 21:30:07.729818 (MainThread): Tracking: tracking
+2021-02-23 21:30:07.729818 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002200E5F5970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002200E3A3A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002200E5FAFA0>]}
+2021-02-23 21:30:07.730817 (MainThread): Set downloads directory='C:\Users\simeon\AppData\Local\Temp\dbt-downloads-jyu3gauj'
+2021-02-23 21:30:07.731817 (MainThread): Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+2021-02-23 21:30:09.189991 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:09.189991 (MainThread): STDERR: "b"Cloning into '859fd0fa21176efee375a447937f7a46'...\n""
+2021-02-23 21:30:09.190990 (MainThread): Pulling new dependency 859fd0fa21176efee375a447937f7a46.
+2021-02-23 21:30:09.190990 (MainThread): Executing "git rev-parse HEAD"
+2021-02-23 21:30:09.217962 (MainThread): STDOUT: "b'bbba960726667abc66b42624f0d36bbb62c37593\n'"
+2021-02-23 21:30:09.217962 (MainThread): STDERR: "b''"
+2021-02-23 21:30:09.217962 (MainThread):   Checking out branch 0.6.3.
+2021-02-23 21:30:09.217962 (MainThread): Executing "git remote set-branches origin 0.6.3"
+2021-02-23 21:30:09.247931 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:09.247931 (MainThread): STDERR: "b''"
+2021-02-23 21:30:09.247931 (MainThread): Executing "git fetch --tags --depth 1 origin 0.6.3"
+2021-02-23 21:30:11.085017 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:11.085017 (MainThread): STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.6.3      -> FETCH_HEAD\n * [new tag]         0.0.1      -> 0.0.1\n * [new tag]         0.1.0      -> 0.1.0\n * [new tag]         0.1.1      -> 0.1.1\n * [new tag]         0.1.10     -> 0.1.10\n * [new tag]         0.1.11     -> 0.1.11\n * [new tag]         0.1.12     -> 0.1.12\n * [new tag]         0.1.13     -> 0.1.13\n * [new tag]         0.1.14     -> 0.1.14\n * [new tag]         0.1.15     -> 0.1.15\n * [new tag]         0.1.16     -> 0.1.16\n * [new tag]         0.1.17     -> 0.1.17\n * [new tag]         0.1.18     -> 0.1.18\n * [new tag]         0.1.19     -> 0.1.19\n * [new tag]         0.1.2      -> 0.1.2\n * [new tag]         0.1.20     -> 0.1.20\n * [new tag]         0.1.21     -> 0.1.21\n * [new tag]         0.1.22     -> 0.1.22\n * [new tag]         0.1.23     -> 0.1.23\n * [new tag]         0.1.24     -> 0.1.24\n * [new tag]         0.1.25     -> 0.1.25\n * [new tag]         0.1.3      -> 0.1.3\n * [new tag]         0.1.4      -> 0.1.4\n * [new tag]         0.1.5      -> 0.1.5\n * [new tag]         0.1.6      -> 0.1.6\n * [new tag]         0.1.7      -> 0.1.7\n * [new tag]         0.1.8      -> 0.1.8\n * [new tag]         0.1.9      -> 0.1.9\n * [new tag]         0.2.0      -> 0.2.0\n * [new tag]         0.2.1      -> 0.2.1\n * [new tag]         0.2.2      -> 0.2.2\n * [new tag]         0.2.3      -> 0.2.3\n * [new tag]         0.2.4      -> 0.2.4\n * [new tag]         0.2.5      -> 0.2.5\n * [new tag]         0.3.0      -> 0.3.0\n * [new tag]         0.4.0      -> 0.4.0\n * [new tag]         0.4.1      -> 0.4.1\n * [new tag]         0.5.0      -> 0.5.0\n * [new tag]         0.5.1      -> 0.5.1\n * [new tag]         0.6.0      -> 0.6.0\n * [new tag]         0.6.1      -> 0.6.1\n * [new tag]         0.6.2      -> 0.6.2\n * [new tag]         0.6.3      -> 0.6.3\n'"
+2021-02-23 21:30:11.085017 (MainThread): Executing "git tag --list"
+2021-02-23 21:30:11.125974 (MainThread): STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n'"
+2021-02-23 21:30:11.125974 (MainThread): STDERR: "b''"
+2021-02-23 21:30:11.126974 (MainThread): Executing "git reset --hard tags/0.6.3"
+2021-02-23 21:30:11.242853 (MainThread): STDOUT: "b'HEAD is now at ac78d49 Merge pull request #309 from fishtown-analytics/bump/0.19.0\n'"
+2021-02-23 21:30:11.242853 (MainThread): STDERR: "b''"
+2021-02-23 21:30:11.242853 (MainThread): Executing "git rev-parse HEAD"
+2021-02-23 21:30:11.270824 (MainThread): STDOUT: "b'ac78d49590ca04758d8ecdeb042eb8152bba6b0f\n'"
+2021-02-23 21:30:11.270824 (MainThread): STDERR: "b''"
+2021-02-23 21:30:11.270824 (MainThread):   Checked out at ac78d49.
+2021-02-23 21:30:11.288806 (MainThread): Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+2021-02-23 21:30:11.316777 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:11.316777 (MainThread): STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
+2021-02-23 21:30:11.316777 (MainThread): command return code=128
+2021-02-23 21:30:11.317776 (MainThread): Updating existing dependency 859fd0fa21176efee375a447937f7a46.
+2021-02-23 21:30:11.317776 (MainThread): Executing "git rev-parse HEAD"
+2021-02-23 21:30:11.345747 (MainThread): STDOUT: "b'ac78d49590ca04758d8ecdeb042eb8152bba6b0f\n'"
+2021-02-23 21:30:11.345747 (MainThread): STDERR: "b''"
+2021-02-23 21:30:11.345747 (MainThread):   Checking out branch 0.6.3.
+2021-02-23 21:30:11.345747 (MainThread): Executing "git remote set-branches origin 0.6.3"
+2021-02-23 21:30:11.375716 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:11.375716 (MainThread): STDERR: "b''"
+2021-02-23 21:30:11.375716 (MainThread): Executing "git fetch --tags --depth 1 origin 0.6.3"
+2021-02-23 21:30:12.556131 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:12.556131 (MainThread): STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.6.3      -> FETCH_HEAD\n'"
+2021-02-23 21:30:12.556131 (MainThread): Executing "git tag --list"
+2021-02-23 21:30:12.589097 (MainThread): STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n'"
+2021-02-23 21:30:12.589097 (MainThread): STDERR: "b''"
+2021-02-23 21:30:12.589097 (MainThread): Executing "git reset --hard tags/0.6.3"
+2021-02-23 21:30:12.657027 (MainThread): STDOUT: "b'HEAD is now at ac78d49 Merge pull request #309 from fishtown-analytics/bump/0.19.0\n'"
+2021-02-23 21:30:12.657027 (MainThread): STDERR: "b''"
+2021-02-23 21:30:12.657027 (MainThread): Executing "git rev-parse HEAD"
+2021-02-23 21:30:12.685997 (MainThread): STDOUT: "b'ac78d49590ca04758d8ecdeb042eb8152bba6b0f\n'"
+2021-02-23 21:30:12.685997 (MainThread): STDERR: "b''"
+2021-02-23 21:30:12.685997 (MainThread):   Already at ac78d49, nothing to do.
+2021-02-23 21:30:12.695987 (MainThread): Installing https://github.com/fishtown-analytics/dbt-utils.git@0.6.3
+2021-02-23 21:30:12.695987 (MainThread): Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+2021-02-23 21:30:12.719962 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:12.719962 (MainThread): STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
+2021-02-23 21:30:12.719962 (MainThread): command return code=128
+2021-02-23 21:30:12.719962 (MainThread): Updating existing dependency 859fd0fa21176efee375a447937f7a46.
+2021-02-23 21:30:12.720960 (MainThread): Executing "git rev-parse HEAD"
+2021-02-23 21:30:12.746934 (MainThread): STDOUT: "b'ac78d49590ca04758d8ecdeb042eb8152bba6b0f\n'"
+2021-02-23 21:30:12.746934 (MainThread): STDERR: "b''"
+2021-02-23 21:30:12.746934 (MainThread):   Checking out branch 0.6.3.
+2021-02-23 21:30:12.747932 (MainThread): Executing "git remote set-branches origin 0.6.3"
+2021-02-23 21:30:12.775904 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:12.775904 (MainThread): STDERR: "b''"
+2021-02-23 21:30:12.776903 (MainThread): Executing "git fetch --tags --depth 1 origin 0.6.3"
+2021-02-23 21:30:13.916970 (MainThread): STDOUT: "b''"
+2021-02-23 21:30:13.916970 (MainThread): STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.6.3      -> FETCH_HEAD\n'"
+2021-02-23 21:30:13.916970 (MainThread): Executing "git tag --list"
+2021-02-23 21:30:13.949935 (MainThread): STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n'"
+2021-02-23 21:30:13.950935 (MainThread): STDERR: "b''"
+2021-02-23 21:30:13.950935 (MainThread): Executing "git reset --hard tags/0.6.3"
+2021-02-23 21:30:14.002881 (MainThread): STDOUT: "b'HEAD is now at ac78d49 Merge pull request #309 from fishtown-analytics/bump/0.19.0\n'"
+2021-02-23 21:30:14.002881 (MainThread): STDERR: "b''"
+2021-02-23 21:30:14.002881 (MainThread): Executing "git rev-parse HEAD"
+2021-02-23 21:30:14.032849 (MainThread): STDOUT: "b'ac78d49590ca04758d8ecdeb042eb8152bba6b0f\n'"
+2021-02-23 21:30:14.032849 (MainThread): STDERR: "b''"
+2021-02-23 21:30:14.032849 (MainThread):   Already at ac78d49, nothing to do.
+2021-02-23 21:30:14.035846 (MainThread):   Installed from revision 0.6.3
+
+2021-02-23 21:30:14.035846 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '840fbcde-933d-4869-9dcf-262d31d981ab', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002200E5FA910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002200E5FA730>]}
+2021-02-23 21:30:14.036845 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002200E5F5970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002200E5F5730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002200E5FAFD0>]}
+2021-02-23 21:30:14.036845 (MainThread): Flushing usage events
