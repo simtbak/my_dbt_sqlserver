@@ -1,0 +1,2 @@
+package,source_name,resource_path,type,name,test_n,severity,short_name,full_name
+sqlserver,,model.sqlserver.numbers,model,numbers,0,,,

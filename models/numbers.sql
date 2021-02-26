@@ -3,6 +3,15 @@ with n as (
 	UNION ALL SELECT null
 )
 
+/*
+SQL COMMENT 
+{#
+JINJA COMMENT 
+JINJA COMMENT 
+-#}
+SQL COMMENT 
+*/
+
 SELECT row_number() OVER ( ORDER BY (SELECT NULL) ) n
 FROM n p1
 ,n p2
